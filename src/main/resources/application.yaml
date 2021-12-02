@@ -1,0 +1,8 @@
+
+spring:
+  profiles:
+    active:
+
+node:
+  name: node01
+  id: local:${node.name}

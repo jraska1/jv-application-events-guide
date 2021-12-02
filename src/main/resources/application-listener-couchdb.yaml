@@ -1,0 +1,5 @@
+
+couchdb:
+  url-base: http://localhost:5984/events
+  username: admin
+  password: admin

@@ -1,0 +1,6 @@
+
+event:
+  checker:
+    interval: 30000
+    threshold: 10
+    scheduled: 10000
