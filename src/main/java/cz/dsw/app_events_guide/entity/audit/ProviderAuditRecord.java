@@ -18,13 +18,7 @@ public class ProviderAuditRecord extends AuditRecord {
     @Column
     private ResponseCodeType code;
 
-    public ProviderAuditRecord() {
-    }
-
-    public ProviderAuditRecord(String event) {
-        super(event);
-    }
-
+    public ProviderAuditRecord() { super(); }
     public ProviderAuditRecord(String event, URI tid) {
         super(event, tid);
     }
@@ -32,23 +26,18 @@ public class ProviderAuditRecord extends AuditRecord {
     public String getRequestFrom() {
         return requestFrom;
     }
-
     public void setRequestFrom(String requestFrom) {
         this.requestFrom = requestFrom;
     }
-
     public String getProviderName() {
         return providerName;
     }
-
     public void setProviderName(String providerName) {
         this.providerName = providerName;
     }
-
     public ResponseCodeType getCode() {
         return code;
     }
-
     public void setCode(ResponseCodeType code) {
         this.code = code;
     }

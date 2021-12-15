@@ -26,7 +26,6 @@ public class DelayedCustomEvent<T extends CustomEvent> implements Delayed {
     public T getEvent() {
         return event;
     }
-
     public long getStartTime() {
         return startTime;
     }

@@ -1,3 +1,11 @@
 
+spring:
+  main:
+    web-application-type: NONE
+
+node:
+  name: node09
+  id: local:${node.name}
+
 applicant:
   resource-base: http://localhost:8080/rest

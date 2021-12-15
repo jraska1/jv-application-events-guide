@@ -21,12 +21,12 @@ public class LongLastingEventListener {
     @EventListener
     @Order(30)
     public void handleEvent(ProviderEvent event) {
-        logger.info("Provider Event handled started ...");
+        logger.info("Provider Event started ...");
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             logger.error("Exception occurred", e);
         }
-        logger.info("Provider Event handled finished ...");
+        logger.info("Provider Event finished ...");
     }
 }

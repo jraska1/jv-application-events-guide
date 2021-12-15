@@ -24,14 +24,7 @@ public class AuditRecord {
     @Column(nullable = false)
     private Date ts;
 
-    public AuditRecord() {
-        this(null, null);
-    }
-
-    public AuditRecord(String event) {
-        this(event, null);
-    }
-
+    public AuditRecord() {  }
     public AuditRecord(String event, URI tid) {
         this.oid = UUID.randomUUID();
         this.event = event;
@@ -42,39 +35,30 @@ public class AuditRecord {
     public Long getId() {
         return id;
     }
-
     public void setId(Long id) {
         this.id = id;
     }
-
     public UUID getOid() {
         return oid;
     }
-
     public void setOid(UUID oid) {
         this.oid = oid;
     }
-
     public String getEvent() {
         return event;
     }
-
     public void setEvent(String event) {
         this.event = event;
     }
-
     public URI getTid() {
         return tid;
     }
-
     public void setTid(URI tid) {
         this.tid = tid;
     }
-
     public Date getTs() {
         return ts;
     }
-
     public void setTs(Date ts) {
         this.ts = ts;
     }

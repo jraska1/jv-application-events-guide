@@ -39,4 +39,7 @@ public class ApplicantEvent extends CustomEvent {
     public Response getResponse() {
         return response;
     }
+
+    @Override
+    public String getEvent() { return super.getEvent() + "." + phase.name(); }
 }
